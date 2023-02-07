@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page4",
-    "slug": "page4",
+    "name": "MSSQL",
+    "slug": "mssql",
     "layouts": [
       {
         "viewMode": false,
@@ -49,28 +49,16 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "primaryColumns.id.computedValue"
+                  "key": "primaryColumns.Id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.version_string.computedValue"
+                  "key": "primaryColumns.task_assembly_name.computedValue"
                 },
                 {
-                  "key": "primaryColumns.version_major.computedValue"
+                  "key": "primaryColumns.task_assembly_path.computedValue"
                 },
                 {
-                  "key": "primaryColumns.version_minor.computedValue"
-                },
-                {
-                  "key": "primaryColumns.version_build.computedValue"
-                },
-                {
-                  "key": "primaryColumns.version_revision.computedValue"
-                },
-                {
-                  "key": "primaryColumns.script_hash.computedValue"
-                },
-                {
-                  "key": "primaryColumns.upgrade_script_completed.computedValue"
+                  "key": "primaryColumns.className.computedValue"
                 }
               ],
               "leftColumn": 0,
@@ -113,14 +101,10 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "id",
-                "version_string",
-                "version_major",
-                "version_minor",
-                "version_build",
-                "version_revision",
-                "script_hash",
-                "upgrade_script_completed"
+                "Id",
+                "task_assembly_name",
+                "task_assembly_path",
+                "className"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -135,13 +119,13 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "id": {
+                "Id": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "id",
-                  "id": "id",
-                  "alias": "id",
+                  "originalId": "Id",
+                  "id": "Id",
+                  "alias": "Id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -156,20 +140,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "id",
+                  "label": "Id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Id\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "version_string": {
+                "task_assembly_name": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "version_string",
-                  "id": "version_string",
-                  "alias": "version_string",
+                  "originalId": "task_assembly_name",
+                  "id": "task_assembly_name",
+                  "alias": "task_assembly_name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -184,132 +168,20 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "version_string",
+                  "label": "task_assembly_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_string\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task_assembly_name\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "version_major": {
+                "task_assembly_path": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "version_major",
-                  "id": "version_major",
-                  "alias": "version_major",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "version_major",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_major\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "version_minor": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "version_minor",
-                  "id": "version_minor",
-                  "alias": "version_minor",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "version_minor",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_minor\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "version_build": {
-                  "allowCellWrapping": false,
-                  "index": 4,
-                  "width": 150,
-                  "originalId": "version_build",
-                  "id": "version_build",
-                  "alias": "version_build",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "version_build",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_build\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "version_revision": {
-                  "allowCellWrapping": false,
-                  "index": 5,
-                  "width": 150,
-                  "originalId": "version_revision",
-                  "id": "version_revision",
-                  "alias": "version_revision",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "version_revision",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version_revision\"]))}}",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "script_hash": {
-                  "allowCellWrapping": false,
-                  "index": 6,
-                  "width": 150,
-                  "originalId": "script_hash",
-                  "id": "script_hash",
-                  "alias": "script_hash",
+                  "originalId": "task_assembly_path",
+                  "id": "task_assembly_path",
+                  "alias": "task_assembly_path",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -324,23 +196,23 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "script_hash",
+                  "label": "task_assembly_path",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"script_hash\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task_assembly_path\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "upgrade_script_completed": {
+                "className": {
                   "allowCellWrapping": false,
-                  "index": 7,
+                  "index": 3,
                   "width": 150,
-                  "originalId": "upgrade_script_completed",
-                  "id": "upgrade_script_completed",
-                  "alias": "upgrade_script_completed",
+                  "originalId": "className",
+                  "id": "className",
+                  "alias": "className",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "checkbox",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -352,19 +224,19 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "upgrade_script_completed",
+                  "label": "className",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"upgrade_script_completed\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"className\"]))}}",
                   "validation": {},
                   "cellBackground": ""
                 }
               },
-              "key": "ru54ol8ovl",
+              "key": "zqiv1oxby4",
               "isDeprecated": false,
-              "rightColumn": 44,
+              "rightColumn": 49,
               "textSize": "0.875rem",
-              "widgetId": "1tdli297n7",
+              "widgetId": "0vxv7ec7zy",
               "tableData": "{{Query1.data}}",
               "label": "Data",
               "searchKey": "",
@@ -380,7 +252,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page4_Query1",
+              "id": "MSSQL_Query1",
               "name": "Query1",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -391,15 +263,16 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page4",
+        "id": "MSSQL",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "63db67b1499efb21c90328e4_63e11d14f57de67e2324a995"
+  "gitSyncId": "63e1ca64f57de67e2324abaf_63e1e26bf57de67e2324acf9"
 }

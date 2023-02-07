@@ -1,19 +1,19 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "PostGreSQL",
       "isDefault": true
     },
     {
-      "id": "Page2",
+      "id": "MSSQLnt",
       "isDefault": false
     },
     {
-      "id": "Page3",
+      "id": "Firestore",
       "isDefault": false
     },
     {
-      "id": "Page4",
+      "id": "MSSQL",
       "isDefault": false
     }
   ],
